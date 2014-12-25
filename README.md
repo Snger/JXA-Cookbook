@@ -1,23 +1,23 @@
-[JavaScript for Automation Cookbook][wiki]
+[JavaScript for Automation Cookbook][维基页]
 ==================================
 
-JavaScript for Automation is a new thing in Mac OS X Yosemite.
-It allows you to control applications using JavaScript language. How awesome!
+使用 Javascript 开发 Mac 系统自动化工具是 Mac OS X Yosemite 系统的新特性，
+它允许你使用 JavaScript 去控制系统应用。这听起来如此奇妙！
 
-However, [its documentation](https://developer.apple.com/library/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/index.html) covers the basics of using JavaScript to interact with the Open Scripting Architecture.
-For many tasks in scripting, there's a lot to figure out, and many different documentations to refer to.
+然而，[官方文档](https://developer.apple.com/library/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/index.html) 只是粗略得介绍了如何用 JavaScript 进行基本的交互。
+文档中的很多用法，都没有描述清楚，而且需要更多的参考文档来帮助理解。
 
-So I created this JavaScript for Automation cookbook that features a lot of examples, such as:
+于是在这个项目中，我将介绍几个示例，例如：  
+- 如何 [显示警告、提醒或需确认的弹窗](https://github.com/Snger/JXA-Cookbook/wiki/User-Interactions).  
+- 如何 [在终端运行脚本](https://github.com/Snger/JXA-Cookbook/wiki/Shell-and-CLI-Interactions).  
+- 如何 [创建一个命令行脚本](https://github.com/Snger/JXA-Cookbook/wiki/Using-JavaScript-for-Automation#creating-a-shebang-script)。  
+- 如何创建一个[Mac OS X 服务](https://github.com/Snger/JXA-Cookbook/wiki/Using-JavaScript-for-Automation#creating-a-mac-os-x-service)。  
+- 如何 [使用 Browserify 加载 npm 模块](https://github.com/Snger/JXA-Cookbook/wiki/Exotic-Recipes#requiring-commonjs-and-npm-modules-using-browserify).
 
-- How to [display alert, prompt and confirm dialogs](https://github.com/dtinth/JXA-Cookbook/wiki/User-Interactions).
-- How to [run shell scripts](https://github.com/dtinth/JXA-Cookbook/wiki/Shell-and-CLI-Interactions).
-- How to [create a command-line script](https://github.com/dtinth/JXA-Cookbook/wiki/Using-JavaScript-for-Automation#creating-a-shebang-script) (shebang script) and read `argv` arguments, how to create a [Mac OS X service](https://github.com/dtinth/JXA-Cookbook/wiki/Using-JavaScript-for-Automation#creating-a-mac-os-x-service), or how to [invoke the REPL](https://github.com/dtinth/JXA-Cookbook/wiki/Using-JavaScript-for-Automation#running-the-repl-read-eval-print-loop).
-- How to [use Browserify to be able to require npm modules](https://github.com/dtinth/JXA-Cookbook/wiki/Exotic-Recipes#requiring-commonjs-and-npm-modules-using-browserify) in JXA.
+为了让文档更加直观，我尽可能的提供官方的文档链接，以便你能更加深入的学习。
 
-Where it makes sense, I try to link to the official documentation as much as possible so you can dive deeper.
+为了便于修改和改进内容，文章内容都放在[维基页][]
 
-For ease of editing and contribution, the cookbook's contents are on the [wiki][].
+[![进入维基页](https://svg-buttons.herokuapp.com/button/plain.svg?button_width=400&text=Enter+Wiki)][维基页]
 
-[![Enter Wiki](https://svg-buttons.herokuapp.com/button/plain.svg?button_width=400&text=Enter+Wiki)][wiki]
-
-[wiki]: https://github.com/dtinth/JXA-Cookbook/wiki
+[维基页]: https://github.com/Snger/JXA-Cookbook/wiki
