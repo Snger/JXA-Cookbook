@@ -1,0 +1,75 @@
+JavaScript for Automation Cookbook
+==================================
+
+使用 Javascript 开发 Mac 系统自动化工具是 Mac OS X Yosemite 系统的新特性， 它允许你使用 JavaScript 去控制系统应用
+
+
+目录
+------------------
+
+* [[前言]] <span data-toc-begin="前言"></span>
+    * [[欢迎一起编辑内容|前言#欢迎一起编辑内容]]<span data-toc-end></span>
+* [[书写约定]] <span data-toc-begin="书写约定"></span>
+    * [[AppleScript 的实现|书写约定#AppleScript-的实现]]
+    * [[代码示例|书写约定#代码示例]]
+    * [[代码风格|书写约定#代码风格]]<span data-toc-end></span>
+* [[使用Javascript开发自动化工具]] <span data-toc-begin="使用Javascript开发自动化工具"></span>
+    * [[最简单的方式|使用Javascript开发自动化工具#最简单的方式]]
+    * [[在互动模式中运行|使用Javascript开发自动化工具#在互动模式中运行]]
+    * [[创建指定脚本解释器的文件|使用Javascript开发自动化工具#creating-a-shebang-script]]
+    * [[创建一个 Mac OS X 服务|使用Javascript开发自动化工具#创建一个MacOSX服务]]
+    * [[从脚本中调用|使用Javascript开发自动化工具#从脚本中调用]]<span data-toc-end></span>
+* [[ES6特性]] <span data-toc-begin="ES6特性"></span>
+    * [[拼接数组|ES6特性#拼接数组]]
+    * [[数组和对象的解构|ES6特性#数组和对象的解构]]<span data-toc-end></span>
+* __**__ [[应用实例|应用实例]] <span data-toc-begin="应用实例"></span><span data-toc-end></span>
+    * [[在使用 `Application()` 前，请确定对应的应用已经在运行|应用实例#在使用Application()前，请确定对应的应用已经在运行]]<span data-toc-end></span>
+* [[交互]] <span data-toc-begin="交互"></span>
+    * [[弹窗警告|交互#弹窗警告]]
+    * [[弹窗提示|交互#弹窗提示]]
+    * [[弹窗确认|交互#弹窗确认]]
+    * [[从列表中选择|交互#从列表中选择]]
+    * [[显示通知|交互#显示通知]]<span data-toc-end></span>
+* [[文件及文件夹的交互]] <span data-toc-begin="文件及文件夹的交互"></span>
+    * [[路径对象|文件及文件夹的交互#路径对象]]
+    * [[打开选择文件的弹窗|文件及文件夹的交互#打开选择文件的弹窗]]
+    * [[保存文件的弹窗|文件及文件夹的交互#保存文件的弹窗]]
+    * [[选择文件夹|文件及文件夹的交互#选择文件夹]]<span data-toc-end></span>
+* [[在终端或指定运行环境执行]] <span data-toc-begin="在终端或指定运行环境执行"></span>
+    * [[在终端运行|在终端或指定运行环境执行#在终端运行]]
+    * [[从指定运行环境访问|在终端或指定运行环境执行#从指定运行环境访问]]
+    * [[参数|在终端或指定运行环境执行#参数]]
+    * [[设置出口代码|在终端或指定运行环境执行#设置出口代码]]<span data-toc-end></span>
+* [[它山之石]]<span data-toc-begin="它山之石"></span>
+    * [[清除osascript的最后一条指令返回|它山之石#清除osascript的最后一条指令返回]]
+    * [[使用CoffeeScript|它山之石#使用CoffeeScript]]
+    * [[使用Browserify加载符合CommonJS规范的js或者npm模块|它山之石#使用Browserify加载符合CommonJS规范的js或者npm模块]]<span data-toc-end></span>
+* Application-Specific Recipes
+  * [[iTunes]] <span data-toc-begin="iTunes"></span>
+    * [[Play, Pause and Stop|iTunes#play-pause-and-stop]]
+    * [[Getting the Player Position|iTunes#getting-the-player-position]]
+    * [[Getting the Current Track: An Example of Specifier vs Property Access|iTunes#getting-the-current-track-an-example-of-specifier-vs-property-access]]
+    * [[Sync the plugged in device (iPhone/iPod/iPad)|iTunes#sync-the-plugged-in-device-iphoneipodipad]]<span data-toc-end></span>
+  * [[Messages|Messages]] <span data-toc-begin="Messages"></span><span data-toc-end></span>
+  * [[系统事件]] <span data-toc-begin="系统事件"></span>
+    * [[Sending Keystrokes|系统事件#sending-keystrokes]]
+    * [[Start the Screen Saver|系统事件#start-the-screen-saver]]
+    * [[Menu items|系统事件#menu-items]]<span data-toc-begin="Menu items"></span>
+      * [[Security|系统事件#security]]
+      * [[Clicking menu items|系统事件#clicking-menu-items]]<span data-toc-end></span>
+    <span data-toc-end></span>
+  * [[Safari]] <span data-toc-begin="Safari"></span><span data-toc-end></span>
+* [[示例]] <span data-toc-begin="示例"></span>
+    * [[Finder|示例#finder]]
+    * [[iPhoto|示例#iphoto]]
+    * [[Keynote|示例#keynote]]
+    * [[Miscellaneous|示例#miscellaneous]]
+    * [[更多代码示例|示例#more-examples]]<span data-toc-end></span>
+* [相关的资源引用](#related-resources)
+
+
+相关的资源引用
+-----------------
+
+* [Getting Started with JavaScript for Automation on Yosemite ](http://www.macstories.net/tutorials/getting-started-with-javascript-for-automation-on-yosemite/) by [Alex Guyot](http://www.macstories.net/author/alexguyot/) &mdash; basic guide to automating OS X in two ways: calling methods from AppleScript dictionary, UI automations.
+* [Building OS X Apps with JavaScript](http://tylergaw.com/articles/building-osx-apps-with-js) by [Tyler Gaw](http://tylergaw.com/) &mdash; this tutorial guides you to create a Mac OS X application using the Objective-C bridge.
