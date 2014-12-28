@@ -46,10 +46,10 @@ JavaScript for Automation Cookbook
     * [[使用Browserify加载符合CommonJS规范的js或者npm模块|它山之石#使用Browserify加载符合CommonJS规范的js或者npm模块]]<span data-toc-end></span>
 * Application-Specific Recipes
   * [[iTunes]] <span data-toc-begin="iTunes"></span>
-    * [[Play, Pause and Stop|iTunes#play-pause-and-stop]]
-    * [[Getting the Player Position|iTunes#getting-the-player-position]]
-    * [[Getting the Current Track: An Example of Specifier vs Property Access|iTunes#getting-the-current-track-an-example-of-specifier-vs-property-access]]
-    * [[Sync the plugged in device (iPhone/iPod/iPad)|iTunes#sync-the-plugged-in-device-iphoneipodipad]]<span data-toc-end></span>
+    * [[播放暂停与停止|iTunes#播放暂停与停止]]
+    * [[获取当前曲目的播放到第几秒|iTunes#获取当前曲目的播放到第几秒]]
+    * [[获取当前播放曲目的数据|iTunes#获取当前播放曲目的数据]]
+    * [[同步已连接的设备(iPhone/iPod/iPad)|iTunes#同步已连接的设备(iPhone/iPod/iPad)]]<span data-toc-end></span>
   * [[Messages|Messages]] <span data-toc-begin="Messages"></span><span data-toc-end></span>
   * [[系统事件]] <span data-toc-begin="系统事件"></span>
     * [[Sending Keystrokes|系统事件#sending-keystrokes]]
